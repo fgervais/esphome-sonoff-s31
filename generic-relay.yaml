@@ -1,6 +1,6 @@
 # Basic Config
 substitutions:
-  devicename: fridge-relay
+  devicename: generic-relay
 
 esphome:
   name: ${devicename}
