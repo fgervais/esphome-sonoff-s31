@@ -3,10 +3,15 @@ services:
     # image: esphome/esphome:2024.2.1
     image: esphome/esphome:2024.3.0-dev20240301
     user: ${UID:-1000}:${GID:-1000}
+    environment:
+      - HOME=/tmp
+      - PLATFORMIO_GLOBALLIB_DIR=.piolibs
     volumes:
       - ./:/config:rw
       # Use local time for logging timestamps
       - /etc/localtime:/etc/localtime:ro
+    tmpfs:
+      - /tmp
     # devices:
     #   - /dev/ttyUSB1:/dev/ttyUSB0
     network_mode: host
