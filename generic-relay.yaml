@@ -22,6 +22,8 @@ ota:
 
 mqtt:
   broker: home.home.arpa
+  discovery_unique_id_generator: mac
+  use_abbreviations: false
 
 
 # Device Specific Config
