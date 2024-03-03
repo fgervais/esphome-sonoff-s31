@@ -1,6 +1,6 @@
 # Basic Config
 substitutions:
-  devicename: generic-relay-2
+  devicename: generic-relay-3
 
 esphome:
   name: ${devicename}
